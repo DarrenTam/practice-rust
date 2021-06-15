@@ -4,11 +4,10 @@ fn merge(left: &Vec<i32>, right: &Vec<i32>) -> Vec<i32> {
     let mut temp = Vec::new();
 
     while left_count < left.len() && right_count < right.len() {
-
         if left[left_count] >= right[right_count] {
             temp.push(right[right_count]);
             right_count += 1;
-            if  right_count == right.len(){
+            if right_count == right.len() {
                 break;
             }
         }
@@ -19,14 +18,14 @@ fn merge(left: &Vec<i32>, right: &Vec<i32>) -> Vec<i32> {
         }
     }
 
-    if left_count == left.len()  {
-        for x in right_count..right.len()  {
+    if left_count == left.len() {
+        for x in right_count..right.len() {
             temp.push(right[x])
         }
     }
 
-    if right_count == right.len()  {
-        for x in left_count..left.len()  {
+    if right_count == right.len() {
+        for x in left_count..left.len() {
             temp.push(left[x])
         }
     }
@@ -53,5 +52,6 @@ fn main() {
     let mut numbers = [4, 65, 2, -31, 0, 99, 2, 83, 782].to_vec();
     println!("Before: {:?}", numbers);
     let test = merge_sort(&mut numbers);
+    assert!(test, [-31, 0, 2, 2, 4, 83, 99, 782].to_vec());
     println!("After:  {:?}\n", test);
 }
