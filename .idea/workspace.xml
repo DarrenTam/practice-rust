@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
+    <generated />
+  </component>
+  <component name="CMakeSettings">
+    <configurations>
+      <configuration PROFILE_NAME="Debug" CONFIG_NAME="Debug" />
+    </configurations>
+  </component>
+  <component name="CargoProjects">
+    <cargoProject FILE="$PROJECT_DIR$/Cargo.toml" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="657e36dc-b967-4738-9760-73d607c30b96" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="MacroExpansionManager">
+    <option name="directoryName" value="ewk72cir" />
+  </component>
+  <component name="ProjectId" id="1rkth67WFk9ntp2WNt2Uqvz9ofq" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="cf.first.check.clang-format" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/sort_merge" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="org.rust.cargo.project.model.PROJECT_DISCOVERY" value="true" />
+    <property name="org.rust.disableDetachedFileInspection/Users/darren/CLionProjects/practice-rust/sort_merge/main.rs" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/sort_merge" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/src" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Run" type="CargoCommandRunConfiguration" factoryName="Cargo Command">
+      <option name="channel" value="DEFAULT" />
+      <option name="command" value="run --package practice-rust --bin practice-rust" />
+      <option name="allFeatures" value="false" />
+      <option name="emulateTerminal" value="false" />
+      <option name="backtrace" value="SHORT" />
+      <option name="workingDirectory" value="file://$PROJECT_DIR$" />
+      <envs />
+      <method v="2">
+        <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="RustProjectSettings">
+    <option name="toolchainHomeDirectory" value="$USER_HOME$/.cargo/bin" />
+    <option name="version" value="2" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="657e36dc-b967-4738-9760-73d607c30b96" name="Default Changelist" comment="" />
+      <created>1619532031449</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1619532031449</updated>
+      <workItem from="1619532033559" duration="13589000" />
+      <workItem from="1621873285771" duration="11647000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="304" y="162" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1619532189751">
+      <screen x="0" y="25" width="1680" height="956" />
+    </state>
+    <state x="304" y="162" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.25.1680.956@0.25.1680.956" timestamp="1619532189751" />
+    <state x="552" y="309" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1623772950595">
+      <screen x="0" y="25" width="1680" height="959" />
+    </state>
+    <state x="552" y="309" key="#com.intellij.fileTypes.FileTypeChooser/0.25.1680.959@0.25.1680.959" timestamp="1623772950595" />
+    <state width="1638" height="255" key="GridCell.Tab.0.bottom" timestamp="1623773028187">
+      <screen x="0" y="25" width="1680" height="959" />
+    </state>
+    <state width="1638" height="255" key="GridCell.Tab.0.bottom/0.25.1680.956@0.25.1680.956" timestamp="1620924685427" />
+    <state width="1638" height="255" key="GridCell.Tab.0.bottom/0.25.1680.959@0.25.1680.959" timestamp="1623773028187" />
+    <state width="1638" height="255" key="GridCell.Tab.0.center" timestamp="1623773028186">
+      <screen x="0" y="25" width="1680" height="959" />
+    </state>
+    <state width="1638" height="255" key="GridCell.Tab.0.center/0.25.1680.956@0.25.1680.956" timestamp="1620924685426" />
+    <state width="1638" height="255" key="GridCell.Tab.0.center/0.25.1680.959@0.25.1680.959" timestamp="1623773028186" />
+    <state width="1638" height="255" key="GridCell.Tab.0.left" timestamp="1623773028186">
+      <screen x="0" y="25" width="1680" height="959" />
+    </state>
+    <state width="1638" height="255" key="GridCell.Tab.0.left/0.25.1680.956@0.25.1680.956" timestamp="1620924685425" />
+    <state width="1638" height="255" key="GridCell.Tab.0.left/0.25.1680.959@0.25.1680.959" timestamp="1623773028186" />
+    <state width="1638" height="255" key="GridCell.Tab.0.right" timestamp="1623773028187">
+      <screen x="0" y="25" width="1680" height="959" />
+    </state>
+    <state width="1638" height="255" key="GridCell.Tab.0.right/0.25.1680.956@0.25.1680.956" timestamp="1620924685427" />
+    <state width="1638" height="255" key="GridCell.Tab.0.right/0.25.1680.959@0.25.1680.959" timestamp="1623773028187" />
+    <state width="1638" height="315" key="GridCell.Tab.1.bottom" timestamp="1623772843244">
+      <screen x="0" y="25" width="1680" height="959" />
+    </state>
+    <state width="1638" height="315" key="GridCell.Tab.1.bottom/0.25.1680.956@0.25.1680.956" timestamp="1619626936448" />
+    <state width="1638" height="315" key="GridCell.Tab.1.bottom/0.25.1680.959@0.25.1680.959" timestamp="1623772843244" />
+    <state width="1638" height="315" key="GridCell.Tab.1.center" timestamp="1623772843244">
+      <screen x="0" y="25" width="1680" height="959" />
+    </state>
+    <state width="1638" height="315" key="GridCell.Tab.1.center/0.25.1680.956@0.25.1680.956" timestamp="1619626936448" />
+    <state width="1638" height="315" key="GridCell.Tab.1.center/0.25.1680.959@0.25.1680.959" timestamp="1623772843244" />
+    <state width="1638" height="315" key="GridCell.Tab.1.left" timestamp="1623772843244">
+      <screen x="0" y="25" width="1680" height="959" />
+    </state>
+    <state width="1638" height="315" key="GridCell.Tab.1.left/0.25.1680.956@0.25.1680.956" timestamp="1619626936448" />
+    <state width="1638" height="315" key="GridCell.Tab.1.left/0.25.1680.959@0.25.1680.959" timestamp="1623772843244" />
+    <state width="1638" height="315" key="GridCell.Tab.1.right" timestamp="1623772843244">
+      <screen x="0" y="25" width="1680" height="959" />
+    </state>
+    <state width="1638" height="315" key="GridCell.Tab.1.right/0.25.1680.956@0.25.1680.956" timestamp="1619626936448" />
+    <state width="1638" height="315" key="GridCell.Tab.1.right/0.25.1680.959@0.25.1680.959" timestamp="1623772843244" />
+    <state x="100" y="125" width="1480" height="756" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1622737257036">
+      <screen x="0" y="25" width="1680" height="959" />
+    </state>
+    <state x="100" y="125" width="1480" height="756" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.25.1680.959@0.25.1680.959" timestamp="1622737257036" />
+  </component>
+</project>
