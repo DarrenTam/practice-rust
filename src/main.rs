@@ -51,6 +51,6 @@ fn main() {
     println!("Sort numbers ascending");
     let mut numbers = [4, 65, 2, -31, 0, 99, 2, 83, 782].to_vec();
     println!("Before: {:?}", numbers);
-    let test = merge_sort(&mut numbers);
+    let result = merge_sort(&mut numbers);
     assert_eq!(test, [-31, 0, 2, 2, 4, 65, 83, 99, 782].to_vec())
 }

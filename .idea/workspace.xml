@@ -32,8 +32,6 @@
   <component name="ChangeListManager">
     <list default="true" id="657e36dc-b967-4738-9760-73d607c30b96" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/merge_sort/main.rs" beforeDir="false" afterPath="$PROJECT_DIR$/merge_sort/main.rs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.rs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -109,7 +107,7 @@
       <option name="presentableId" value="Default" />
       <updated>1619532031449</updated>
       <workItem from="1619532033559" duration="13589000" />
-      <workItem from="1621873285771" duration="12429000" />
+      <workItem from="1621873285771" duration="13324000" />
     </task>
     <task id="LOCAL-00001" summary="refactor the folder name">
       <created>1623773603008</created>
@@ -118,7 +116,14 @@
       <option name="project" value="LOCAL" />
       <updated>1623773603008</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="added assert to test the result">
+      <created>1623773865819</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1623773865819</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -137,7 +142,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="refactor the folder name" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactor the folder name" />
+    <MESSAGE value="added assert to test the result" />
+    <option name="LAST_COMMIT_MESSAGE" value="added assert to test the result" />
   </component>
   <component name="WindowStateProjectService">
     <state x="440" y="148" key="#Plugins" timestamp="1623773188959">
@@ -153,26 +159,26 @@
       <screen x="0" y="25" width="1680" height="959" />
     </state>
     <state x="552" y="309" key="#com.intellij.fileTypes.FileTypeChooser/0.25.1680.959@0.25.1680.959" timestamp="1623773529987" />
-    <state width="1638" height="315" key="GridCell.Tab.0.bottom" timestamp="1623773825149">
+    <state width="1638" height="255" key="GridCell.Tab.0.bottom" timestamp="1623773869721">
       <screen x="0" y="25" width="1680" height="959" />
     </state>
     <state width="1638" height="255" key="GridCell.Tab.0.bottom/0.25.1680.956@0.25.1680.956" timestamp="1620924685427" />
-    <state width="1638" height="315" key="GridCell.Tab.0.bottom/0.25.1680.959@0.25.1680.959" timestamp="1623773825149" />
-    <state width="1638" height="315" key="GridCell.Tab.0.center" timestamp="1623773825148">
+    <state width="1638" height="255" key="GridCell.Tab.0.bottom/0.25.1680.959@0.25.1680.959" timestamp="1623773869721" />
+    <state width="1638" height="255" key="GridCell.Tab.0.center" timestamp="1623773869720">
       <screen x="0" y="25" width="1680" height="959" />
     </state>
     <state width="1638" height="255" key="GridCell.Tab.0.center/0.25.1680.956@0.25.1680.956" timestamp="1620924685426" />
-    <state width="1638" height="315" key="GridCell.Tab.0.center/0.25.1680.959@0.25.1680.959" timestamp="1623773825148" />
-    <state width="1638" height="315" key="GridCell.Tab.0.left" timestamp="1623773825148">
+    <state width="1638" height="255" key="GridCell.Tab.0.center/0.25.1680.959@0.25.1680.959" timestamp="1623773869720" />
+    <state width="1638" height="255" key="GridCell.Tab.0.left" timestamp="1623773869719">
       <screen x="0" y="25" width="1680" height="959" />
     </state>
     <state width="1638" height="255" key="GridCell.Tab.0.left/0.25.1680.956@0.25.1680.956" timestamp="1620924685425" />
-    <state width="1638" height="315" key="GridCell.Tab.0.left/0.25.1680.959@0.25.1680.959" timestamp="1623773825148" />
-    <state width="1638" height="315" key="GridCell.Tab.0.right" timestamp="1623773825149">
+    <state width="1638" height="255" key="GridCell.Tab.0.left/0.25.1680.959@0.25.1680.959" timestamp="1623773869719" />
+    <state width="1638" height="255" key="GridCell.Tab.0.right" timestamp="1623773869720">
       <screen x="0" y="25" width="1680" height="959" />
     </state>
     <state width="1638" height="255" key="GridCell.Tab.0.right/0.25.1680.956@0.25.1680.956" timestamp="1620924685427" />
-    <state width="1638" height="315" key="GridCell.Tab.0.right/0.25.1680.959@0.25.1680.959" timestamp="1623773825149" />
+    <state width="1638" height="255" key="GridCell.Tab.0.right/0.25.1680.959@0.25.1680.959" timestamp="1623773869720" />
     <state width="1638" height="315" key="GridCell.Tab.1.bottom" timestamp="1623773825151">
       <screen x="0" y="25" width="1680" height="959" />
     </state>
