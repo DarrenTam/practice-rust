@@ -1,5 +1,5 @@
 [package]
-name = "practice-rust"
+name = "linked-list"
 version = "0.1.0"
 authors = ["Darren Tam <darrentamhk@gmail.com>"]
 edition = "2018"
