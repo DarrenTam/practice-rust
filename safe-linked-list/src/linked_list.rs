@@ -8,6 +8,15 @@ pub(crate) struct LinkedList {
 }
 
 impl LinkedList {
+    pub fn new(value: i32) -> LinkedList {
+        LinkedList{ head:Some(
+            Box::new(Node {
+                value,
+                next: None,
+            })
+        )}
+    }
+
     pub fn size(&self) -> i32 {
         let mut size = 1;
         match self.head {
@@ -114,22 +123,22 @@ impl LinkedList {
     }
 
     //O(2N) soultion,
-    pub fn insert(&mut self, index : i32, vaule: i32){
-        let mut next_node =  self.head.as_mut();
+    pub fn insert(&mut self, index: i32, vaule: i32) {
+        let mut next_node = self.head.as_mut();
 
-        for _i in 0..index-1 {
+        for _i in 0..index - 1 {
             next_node = next_node.unwrap().next.as_mut()
         }
 
         let mut node = Node {
-            value:vaule,
-            next:  None
+            value: vaule,
+            next: None,
         };
 
         node.set_next(next_node.unwrap().next.take());
 
         let mut current = self.head.as_mut();
-        for _i in 0..index-1 {
+        for _i in 0..index - 1 {
             current = current.unwrap().next.as_mut()
         }
 
@@ -137,7 +146,7 @@ impl LinkedList {
     }
 
     fn split_node(&mut self, index: i32) -> Option<Box<Node>> {
-        let mut current =  self.head.as_mut();
+        let mut current = self.head.as_mut();
         for _i in 0..index {
             current = current.unwrap().next.as_mut();
         }
@@ -146,11 +155,10 @@ impl LinkedList {
 
     //O(2N) solution
     pub fn erase(&mut self, index: i32) {
+        let node_after_index = self.split_node(index);
 
-        let node_after_index =  self.split_node(index);
-
-        let mut current =  self.head.as_mut();
-        for _i in 0..index-1 {
+        let mut current = self.head.as_mut();
+        for _i in 0..index - 1 {
             current = current.unwrap().next.as_mut();
         }
 
@@ -160,7 +168,7 @@ impl LinkedList {
     //TODO Bit ugly refactor this
     pub fn reverse(&mut self) {
         let mut current = self.head.take();
-        let mut prev = None ;
+        let mut prev = None;
         while current.is_some() {
             let mut current_unwraped = current.take().unwrap();
             let next = current_unwraped.next.take();
@@ -177,11 +185,11 @@ impl LinkedList {
             Some(ref mut head) => {
                 let mut current = head;
                 while current.next.is_some() {
-                    if current.value==value {
+                    if current.value == value {
                         self.erase(i);
                         break;
                     }
-                    i+=1;
+                    i += 1;
                     current = current.next.as_mut().unwrap();
                 }
             }
