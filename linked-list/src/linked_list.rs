@@ -1,7 +1,7 @@
-use crate::node::Node;
-use crate::node;
 use std::mem;
-use std::convert::TryInto;
+use std::ops::Deref;
+
+use crate::node::Node;
 
 pub(crate) struct LinkedList {
     pub(crate) head: Option<Box<Node>>,
@@ -55,19 +55,19 @@ impl LinkedList {
         self.head = temp;
     }
 
-    pub fn lenght(& self) -> i32{
+    pub fn lenght(&self) -> i32 {
         let mut count = 0;
         let mut current = self.head.as_ref();
         while current.is_some() {
             current = current.unwrap().next.as_ref();
-            count+=1;
+            count += 1;
         }
         count
     }
 
     //Overhead way to do this, O(2N), or just store the length in the list, it could be O(N)
     pub fn pop_back(&mut self) {
-        let length = self.lenght()-2;
+        let length = self.lenght() - 2;
         let mut current = self.head.as_mut();
         for _x in 0..length {
             current = current.unwrap().next.as_mut()
@@ -91,6 +91,101 @@ impl LinkedList {
                 }
                 currrent.next = Some(Box::new(node));
             }
+        }
+    }
+
+    pub fn front(&self) -> i32 {
+        return self.head.as_ref().unwrap().value;
+    }
+
+    pub fn back(&mut self) -> i32 {
+        let mut value = 0;
+        match self.head {
+            Some(ref head) => {
+                let mut current = head;
+                while current.next.is_some() {
+                    current = current.next.as_ref().unwrap();
+                }
+                value = current.value;
+            }
+            _ => {}
+        }
+        return value;
+    }
+
+    //O(2N) soultion,
+    pub fn insert(&mut self, index : i32, vaule: i32){
+        let mut next_node =  self.head.as_mut();
+
+        for _i in 0..index-1 {
+            next_node = next_node.unwrap().next.as_mut()
+        }
+
+        let mut node = Node {
+            value:vaule,
+            next:  None
+        };
+
+        node.set_next(next_node.unwrap().next.take());
+
+        let mut current = self.head.as_mut();
+        for _i in 0..index-1 {
+            current = current.unwrap().next.as_mut()
+        }
+
+        current.unwrap().next = Some(Box::new(node));
+    }
+
+    fn split_node(&mut self, index: i32) -> Option<Box<Node>> {
+        let mut current =  self.head.as_mut();
+        for _i in 0..index {
+            current = current.unwrap().next.as_mut();
+        }
+        current.take().map(|node| node.next.take()).unwrap()
+    }
+
+    //O(2N) solution
+    pub fn erase(&mut self, index: i32) {
+
+        let node_after_index =  self.split_node(index);
+
+        let mut current =  self.head.as_mut();
+        for _i in 0..index-1 {
+            current = current.unwrap().next.as_mut();
+        }
+
+        current.unwrap().set_next(node_after_index);
+    }
+
+    //TODO Bit ugly refactor this
+    pub fn reverse(&mut self) {
+        let mut current = self.head.take();
+        let mut prev = None ;
+        while current.is_some() {
+            let mut current_unwraped = current.take().unwrap();
+            let next = current_unwraped.next.take();
+            current_unwraped.next = prev.take();
+            prev = Some(current_unwraped);
+            current = next;
+        }
+        self.head = prev;
+    }
+
+    pub fn remove_value(&mut self, value: i32) {
+        let mut i = 0;
+        match self.head {
+            Some(ref mut head) => {
+                let mut current = head;
+                while current.next.is_some() {
+                    if current.value==value {
+                        self.erase(i);
+                        break;
+                    }
+                    i+=1;
+                    current = current.next.as_mut().unwrap();
+                }
+            }
+            _ => {}
         }
     }
 

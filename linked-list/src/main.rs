@@ -1,8 +1,9 @@
+use std::fmt;
+
+use crate::node::Node;
+
 mod node;
 mod linked_list;
-
-use std::fmt;
-use crate::node::Node;
 
 fn main() {
     let head =
@@ -26,5 +27,18 @@ fn main() {
     linked_list.print_all();
     linked_list.pop_back();
     println!("after pop back");
+    linked_list.print_all();
+    linked_list.insert(1,765);
+    linked_list.insert(2,999);
+    println!("after insert");
+    linked_list.print_all();
+    linked_list.erase(1);
+    println!("after earse");
+    linked_list.print_all();
+    linked_list.reverse();
+    println!("after reverse");
+    linked_list.print_all();
+    linked_list.remove_value(999);
+    println!("after remove value");
     linked_list.print_all();
 }
