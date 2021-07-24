@@ -25,4 +25,4 @@ Just a personal pratice repo, the code might be buggy and ugly, will trying to i
 
 ## License
 
-[MIT](LICENSE) © Richard Littauer
+[MIT](LICENSE) © Darren Tam
