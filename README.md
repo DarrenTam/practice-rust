@@ -15,6 +15,7 @@ Just a personal pratice repo, the code might be buggy and ugly, will trying to i
 ## Data Structure
 
 - Linked list
+- Hash table
 
 ## Algorithm
 
